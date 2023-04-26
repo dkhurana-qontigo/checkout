@@ -37,9 +37,9 @@ jobs:
       # Basic checkout
       - name: Checkout basic
         uses: ./
-        with:
-          ref: test-data/v2/basic
-          path: basic
+        # with:
+         # ref: test-data/v2/basic
+         # path: basic
       - name: Verify basic
         shell: bash
         run: __test__/verify-basic.sh
